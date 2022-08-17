@@ -2,6 +2,7 @@
 Database models
 """
 from django.conf import settings
+
 from django.db import models
 from django.contrib.auth.models import (
     BaseUserManager, AbstractBaseUser, PermissionsMixin
@@ -68,3 +69,6 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
+    def __str__(self):
+        return self.title

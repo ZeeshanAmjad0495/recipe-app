@@ -8,7 +8,6 @@ from core.models import (
     Tag,
 )
 
-
 class RecipeSerializer(serializers.ModelSerializer):
     """Serializer for recipes."""
 
@@ -32,3 +31,4 @@ class TagSerializer(serializers.ModelSerializer):
         model = Tag
         fields = ['id', 'name']
         read_only_fields = ['id']
+
